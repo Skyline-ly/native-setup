@@ -2,6 +2,10 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import {Tabs} from "expo-router";
+import {ImageBackground} from "expo-image";
+import {Image} from 'expo-image';
+import {images} from "@/constants/images";
+import {icons} from "@/constants/icons";
 
 const _layout = () => {
   return (
@@ -14,6 +18,7 @@ const _layout = () => {
        options={{
            title: 'Home',
            headerShown: false,
+
        }}
        />
        <Tabs.Screen
